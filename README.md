@@ -4,10 +4,11 @@ SudokuSolver
 A simple Javasudoku solver: accepts a file or a string.
 
 OPTIONS
-        -f <filename>
+
+        -f, --filename <filename>
             Filename of sudoku problem file
 
-        -s <string>                
+        -s, --sudoku <string>                
             String of sudoku problem file
 
         -h, --help

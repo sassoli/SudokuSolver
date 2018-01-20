@@ -30,7 +30,7 @@ public class SudokuSolver {
 
 		if(args.length > 0){
 			
-			if(args[0].equalsIgnoreCase("-h")){
+			if(args[0].equalsIgnoreCase("-h") || args[0].equalsIgnoreCase("--help")){
 				
 				System.out.println("\033[1mUsage:\033[0m");
 				System.out.println("java sudokuSolver [options] [arguments]");
@@ -39,7 +39,7 @@ public class SudokuSolver {
 				System.exit(0);
 			}
 			
-			if(args[0].equalsIgnoreCase("-f")){
+			if(args[0].equalsIgnoreCase("-f") || args[0].equalsIgnoreCase("--filename")){
 				if(args.length == 1){
 					System.out.println("error: filename missing");
 					System.exit(0);
@@ -53,7 +53,7 @@ public class SudokuSolver {
 				}	
 			}
 			
-			if(args[0].equalsIgnoreCase("-s")){
+			if(args[0].equalsIgnoreCase("-s")|| args[0].equalsIgnoreCase("--sudoku")){
 				if(args.length == 1){
 					System.out.println("error: sudoku missing");
 					System.exit(0);
